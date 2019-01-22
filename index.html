@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.style %>/style/main.css">
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h2 class="text-center">Get Current Weather</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center text-primary">Enter City Name</h3>
+            <span id="error"></span>
+        </div>
+
+        <div class="row form-group form-inline" id="rowDiv">
+            <input type="text" name="city" id="city" class="form-control" placeholder="City Name">
+            <button id="submitWeather" class="btn btn-primary">Search City</button>
+        </div>
+        <br/>
+        <br/>
+        <div id='show'></div>
+
+        <div id="clock">
+            <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+        </div>
+         
+    </div>
+
+    <div class='footer'>
+        <div class="container">
+            <div class="row text-center individual">
+                <p class="crStyle">Copyright &copy; All rights reserved 2018</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
